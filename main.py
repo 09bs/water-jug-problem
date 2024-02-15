@@ -34,7 +34,7 @@ def water_jug(x: int, y: int, z: int):
                 que.append((x, jug[1], f'fill {x} liter jug', prev))
 
             if jug[1] < y:
-                que.append((jug[1], y, f'fill {y} liter jug', prev))
+                que.append((jug[0], y, f'fill {y} liter jug', prev))
 
             if jug[0] > 0:
                 que.append((0, jug[1], f'empty {x} liter jug', prev))
